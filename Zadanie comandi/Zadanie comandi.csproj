@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>Zadanie_comandi</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\жирный.png" />
+    <None Remove="Data\курсив.png" />
+    <None Remove="Data\подчеркнутый.png" />
+    <None Remove="жирный.png" />
+    <None Remove="курсив.png" />
+    <None Remove="подчеркнутый.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Data\жирный.png" />
+    <Resource Include="Data\курсив.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Data\подчеркнутый.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="жирный.png" />
+    <Resource Include="курсив.png" />
+    <Resource Include="подчеркнутый.png" />
+  </ItemGroup>
+
+</Project>
